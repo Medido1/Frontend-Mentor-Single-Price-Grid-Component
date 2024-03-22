@@ -1,0 +1,168 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  /* # Colors */
+
+  /* ## Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --light_cyan: hsl(179, 62%, 48%);
+  --Bright_Yellow: hsl(71, 73%, 54%);
+
+  /* ## Neutral */
+
+  --Light_Gray: hsl(204, 43%, 93%);
+  --Grayish_Blue: hsl(218, 22%, 67%);
+
+  /* ##Font */
+  
+  --main_font : "Karla", sans-serif;
+
+}
+
+/* Css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* attribution styling */
+
+.attribution { 
+  font-size: .75em; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* Document styling */
+
+body {
+  min-height: 100vh;
+  background-color: var(--Light_Gray);
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  font-family: var(--main_font);
+  font-size: 1rem;
+}
+
+body,
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: white;
+  border-radius: .5rem .5rem 0 0;
+  padding: 1.5rem 1.25rem 1.75rem 1.25rem;
+  gap: 1rem;
+  color: var(--Grayish_Blue);
+  max-width: 600px;
+}
+
+.header h2{
+  color: var(--Cyan);
+  font-size: 1.375rem;
+}
+
+.header p:first-of-type{
+  color: var(--Bright_Yellow);
+  font-weight: 800;
+}
+
+.main {
+  width: 100%;
+  max-width: 600px;
+}
+
+.sign_up_container {
+  background-color: var(--Cyan);
+}
+
+.whyUs_container {
+  background-color: var(--light_cyan);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.sign_up_container,
+.whyUs_container {
+  padding: 1.5rem 1.25rem;
+  width: 100%;
+  color: white;
+}
+
+.sign_up_container h2,
+.whyUs_container h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.price_container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price_container p {
+  opacity: 70%;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.btn {
+  margin-top: 1rem;
+  border-radius: .5rem;
+  padding: .75rem 1.5rem;
+  background-color: var(--Bright_Yellow);
+  font: inherit;
+  border: none;
+  color: white;
+  font-weight: 800;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 300px;
+  transition: transform 250ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.benefit_list {
+  list-style: none;
+}
+
+@media (min-width: 31.75rem){
+  .main {
+    display: flex;
+  }
+  .whyUs_container{
+    border-radius: 0 .5rem .5rem 0;
+
+  }
+}
